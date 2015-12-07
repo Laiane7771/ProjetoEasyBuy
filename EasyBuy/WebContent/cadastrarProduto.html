@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Cadastrar Produto</title>
+		<link rel="stylesheet" href="css/cabecalho_adm.css">
+		<link rel="stylesheet" href="css/corpo_adm.css">
+		<script type="text/javascript" src="js/cadastrarProdutos.js"></script>
+	</head>
+	<body>
+		<header id = "cabecalho-adm">
+			<div id = "label_boasVindas" class = "estilo-text"> Bem-Vindo Fulano(a)</div>
+			<div id = "logo-ecommerce"></div>
+			<div id = "label-administrar"><span class = "estilo-text">Área Administrativa</span></div>
+		</header>
+		<section id = "principal-adm">
+			<div id = "cadastrar_produto">
+				<div id = "labelcadastrarp">Cadastrar Produto</div>
+				<div id = "labelCategoriap">Categoria</div>
+				<select id = "categorias" name = "combobox"></select>
+				<div id = "labelSubp">Subcategoria</div>
+				<select id = "idSubCategorias" name = "combobox"></select>
+				<div id = "labelnome">Nome</div>
+				<input id = "input-nome" type= "text"> </input>
+				<div id = "labelDescricaop">Descrição:</div>
+				<div id = "espaçofield">
+					<div id = labelValorAtual>Valor Atual:</div>
+					<input id = "entradavaloratual"></input>
+					<div id = "labelValorAnterior">Valor Anterior:</div>
+					<input id = "entradavaloranterior"></input>
+				</div>
+				<textarea id  = "area-text-desc" rows= "4" cols= "40"></textarea>
+				<div id = "areabotaocadp">
+					<div id = "label-cad">Cadastrar</div>
+				</div>
+				<div id = "areabotaovolp">
+					<a href= "administracao.html"><div id = "label-vol">Voltar</div></a>
+				</div>
+				
+			</div>
+			
+		</section>
+		<footer id = "rodape-adm"></footer>
+		<script type="text/javascript" src="js/cadastrarProdutos.js"></script>
+	</body>
+</html>
