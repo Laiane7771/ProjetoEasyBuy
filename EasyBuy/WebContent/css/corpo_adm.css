@@ -132,13 +132,14 @@
 }
 #area-cadastro{
 	position: absolute;
-    width: 534px;
-    height: 394px;
-    top: 73px;
-    left: 256px;
+    width: 972px;
+    height: 506px;
+    top: 30px;
+    left: 16px;
     background: rgba(24, 216, 245, 0.55);
     border: 1px solid;
 }
+
 .estilo-submite{
 	position: absolute;
     width: 81px;
@@ -151,6 +152,7 @@
 
 .estilo-input-desc{
 	position: absolute;
+	left: 189px;
     width: 344px;
     height: 124px;
     font-size: 14px;
@@ -165,12 +167,23 @@
 	
 }
 
+#areaTabela{
+	position: absolute;
+    top: 262px;
+    left: 137px;
+    
+}
+
+table{
+	border: 1px solid;
+	background: white;
+}
 #area-botao-cadastrar{
 	position: absolute;
    	width: 68px;
     height: 33px;
     border: 1px solid;
-    top: 204px;
+    top: 328px;
     left: 286px;
     color: black;
 	cursor: pointer;
@@ -192,7 +205,7 @@
     width: 60px;
     height: 33px;
     border: 1px solid;
-    top: 204px;
+    top: 327px;
     left: 216px;
     color: black;
 	cursor: pointer;
@@ -315,14 +328,7 @@
 	width: 100px;
 	height: 40px;
 }
-#cadastrar_produto{
-	position: absolute;
-    top: 15px;
-    left: 300px;
-    width: 680px;
-    height: 493px;
-    border: 1px solid white;
-}
+
 #labelCategoriap{
 	position: absolute;
     top: 75px;
@@ -330,24 +336,12 @@
     font-size: 20px;
     color: white;
 }
-#labelcadastrarp{
-	position: absolute;
-    top: 10px;
-    left: 12px;
-    font-size: 40px;
-    color: white;
-}
-#categorias{
-	position: absolute;
-    top: 69px;
-    left: 350px;
-    width: 254px;
-    height: 28px;
-}
+
+
 #categoriasNome{
 	position: absolute;
     top: 18px;
-    left: 0px;
+    left:  188px;
     width: 344px;
     height: 28px;
 }
@@ -358,13 +352,7 @@
     font-size: 20px;
     color: white;
 }
-#idSubCategorias{
-	position: absolute;
-	top: 124px;
-	left: 336px;
-	width: 254px;
-	height: 28px;
-}
+
 #labelnome{
 	position: absolute;
     top: 173px;

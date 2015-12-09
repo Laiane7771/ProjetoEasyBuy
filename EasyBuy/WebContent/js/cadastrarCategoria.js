@@ -1,29 +1,25 @@
-
 $(document).ready(function(){
-	$('#est-botao-cadastrar').click(function(){
+	$('#botao').click(function(){
 		$.ajax({
-			url:'http://carrinhocompras-visecitecfsa.rhcloud.com/registerCategory?nomeCategoria='+ $('#categoriasNome').val(),
-			
+			url:'http://carrinhocompras-visecitecfsa.rhcloud.com/registerCategory?nomeCategoria='+ $('#NomeCategoriainput').val(),
 			crossDomain: true,
-			
-			sucess: function(data){
-				altert(data);
+				sucess: function(data){
+					altert(data);
+					alert("Categoria Cadastrada com sucesso!");
 				},
 				error: function(){
 					alert("erro");
 				},
 				beforeSend: function(){
-					/*$('#carregando...').show();*/
+					alert("Carregando...");
 				},
 				complete:function(){
-					/*$('#carregando').hide();*/
+					/*alert("Categoria Cadastrada com sucesso!");*/
 					alert("Categoria Cadastrada com sucesso!");
 				}
 		});
-	
 		return false;
 	});
-});			                	
-			                	
-	
-	     
+});		                	
+		                		
+  

@@ -1,34 +1,33 @@
-
 $(document).ready(function(){
 
-	$('#categorias').load('http://carrinhocompras-visecitecfsa.rhcloud.com/categoryList');
-	$('#idSubCategorias').load('http://carrinhocompras-visecitecfsa.rhcloud.com/subCategoryList?idCategoria='+$("#idSubCategorias").val()),
+	$('#categorias').load('http://carrinhocompras-visecitecfsa.rhcloud.com/categoryList', function(){
+		$('#idSubCategorias').load('http://carrinhocompras-visecitecfsa.rhcloud.com/subCategoryList?idCategoria='+$("#categorias").val());
+	});
 
 	$('#categorias').change(function(){
-		$('#idSubCategorias').load('http://carrinhocompras-visecitecfsa.rhcloud.com/subCategoryList?idCategoria='+$("#idSubCategorias").val()),
-
-		$('#label-cad').click(function(){
+		$('#idSubCategorias').load('http://carrinhocompras-visecitecfsa.rhcloud.com/subCategoryList?idCategoria='+$("#categorias").val());
+	});
+		$('#btCadastrar').click(function(){
+			alert('http://carrinhocompras-visecitecfsa.rhcloud.com/registerProduct?descricao='+$("#areaDescri").val()+'&valorAtual='+$("#ValorA").val()+'&valorAnterior='+$("#ValorAn").val()+'&idSubcategoria='+$("#idSubCategorias").val());
 			$.ajax({
-				url:'http://carrinhocompras-visecitecfsa.rhcloud.com/registerProduct?descricao='+$("#area-text-desc")+'&valorAtual='+$("#entradavaloratual")+'&valorAnterior='+$("#entradavaloranterior")+'&idSubcategoria='+$("#idSubCategorias").val(),
+				url:'http://carrinhocompras-visecitecfsa.rhcloud.com/registerProduct?descricao='+$("#areaDescri").val()+'&valorAtual='+$("#ValorA").val()+'&valorAnterior='+$("#ValorAn").val()+'&idSubCategoria='+$("#idSubCategorias").val(),
 				crossDomain:true,		
 
 				sucess:function(data){
 					alert(data);
+					alert("Produto cadastrado");
 				},
 				error:function(){
 					alert("erro");
 				},
 				beforeSend:function(){
-					/* $('#carregando').show();*/
+					alert("Carregando...");
 				},
 				complete:function(){
-					/* $('#carregando').hide();*/
-					alert("produto cadastrado");
-				}  
-
+					alert("Produto cadastrado");
+				} 
 			});
 			return false;
 		});	
-
 	});
-});
+

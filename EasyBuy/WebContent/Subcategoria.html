@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Cadastrar Subcategoria</title>
+	    <link rel= "stylesheet" href= "css/categoria.css">
+		<link rel= "stylesheet" href="css/subcategorias.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/cadastrarSubcategoria.js"></script> 
+	</head>
+	<body>
+		<header id = cabecalho>
+			<div id = "label_boasVindas" class = "estilo-text"> Bem-Vindo Laiane</div>
+			<div id = "logo-ecommerce"></div>
+			<div id = "label-administrar"><span class = "estilo-text">Área Administrativa</span></div>
+		</header>
+		<div id = principal>
+			<div id = "espacoFormulario">
+				<span id = "labelCadatrarSub">Cadastrar Subcategoria</span>
+				<span id = "labelCategoria">Categoria:</span>
+				<select id = "categorias"></select>
+				<span id = "labelNomeSub">Nome:</span>
+				<input type = "text" id = "idSubCategorias"></input>
+				<span id = "labelDescriSub">Descrição:</span>
+				<textarea rows="3" cols="6" id = "areaDescri"></textarea>
+				<input type = "text" name = "pesquisar" id = "inputPesquisar"></input>
+				<a href= administracao.html><div id = "btnVolta"><span id = "labelVoltar">Voltar</span></div></a>
+				<div id = "btnCadastra"><span id = "labelCadas">Cadastrar</span></div>
+				<div id="btnPesquisa"><span id = "labelPesquisar">Pesquisar</span></div>
+				<div id = "espacoTabelaSub">
+					<table  id = "tabelaSub" width = "50%"border = "1">
+						<tr> 
+							<td> Categoria</td>
+							<td> Nome</td>
+							<td> Descrição</td>
+						</tr>
+						<tr> 
+							<td> Notebook</td>
+							<td> Dell</td>
+							<td> Marca Registrada</td>
+						</tr>
+						<tr> 
+							<td> Celular</td>
+							<td> Apple</td>
+							<td> Marca Registrada</td>
+						</tr>
+						<tr> 
+							<td> Tablet</td>
+							<td> Accer</td>
+							<td> Marca Registrada</td>
+						</tr>
+						<tr> 
+							<td> Netbook</td>
+							<td> Accer</td>
+							<td> Marca Registrada</td>
+						</tr>
+					</table>
+			</div>
+		</div>
+		<footer id = rodape><span id = "estilo-rodape">Power By Laiane Ricardo</span></footer>
+	</body>
+</html>

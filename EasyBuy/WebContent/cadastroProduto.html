@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Cadastrar Produto</title>
+		<link rel="stylesheet" href="css/cadProduto.css"></link>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/cadastrarProdutos.js"></script>
+	</head>
+	<body>
+		<header id = "cabecalho">
+			<div id = "label_boasVindas" class = "estilo-text"> Bem-Vindo Laiane</div>
+			<div id = "logo-ecommerce"></div>
+			<div id = "label-administrar"><span class = "estilo-text">Área Administrativa</span></div>
+		</header>
+		<div id = "principal">
+			<div id = "areaFormulario">
+				<span id = "labelCadastrar">Cadastrar Produto</span>
+				
+				<span id = "labelCategoria">Categoria:</span>
+				<select id = "categorias"></select>
+				
+				<span id = "labelSubCate">Subcategoria:</span>
+				<select id = "idSubCategorias"></select>
+				
+				<span id = "labelNome">Nome:</span>
+				<input type = "text" name = "Inputnome" id = "inputNome"></input>
+				
+				<span id = "labelDescri">Descrição:</span>
+				<textarea rows="3" cols="6" id = "areaDescri"></textarea>
+				
+				<span id = "labelValorA">Valor Atual:</span>
+				<input  type = "text" name = "InputValorA"id = "ValorA"></input>
+				
+				<span id = "labelValorAn">Valor Anterior:</span>
+				<input type = "text" name = "InputValorAn" id = "ValorAn"></input>
+				
+				<a href="administracao.html">
+					<div id = "btVoltar"><span id = "labelVoltar1">Voltar</span></div>
+				</a>	
+				<div id = "btCadastrar"><span id = "labelCadastrar1">Cadastrar</span></div>
+				
+				<input type = "text" name = "Inputpesquisar" id = "InputPesqui"></input>
+				<div id = "botaoPesquisar"><span id = "labelPesq">Pesquisar</span></div>
+				
+				<div id = "areaTab">
+					<table  id = "tabela" width = "50%"border = "1">
+						<tr> 
+							<td> id</td>
+							<td> Nome</td>
+							<td> Descrição</td>
+							<td> Valor</td>
+						<td> <a href = "alterarProduto.html">alterar</a></td>
+						<td> <a onclick = "excluir_registro()">excluir</a></td>
+						</tr>
+						<tr> 
+							<td> 1</td>
+							<td> Notebook</td>
+							<td> Accer</td>
+							<td> R$300,00</td>
+								<td> <a href = "alterarProduto.html">alterar</a></td>
+							<td> <a onclick = "excluir_registro()">excluir</a></td>
+						</tr>
+						<tr> 
+							<td> 2</td>
+							<td> Tablet</td>
+							<td> Asus</td>
+							<td> R$1000,00</td>
+								<td> <a href = "alterarProduto.html">alterar</a></td>
+							<td> <a onclick = "excluir_registro()">excluir</a></td>
+						</tr>
+						<tr> 
+							<td> 2</td>
+							<td> Tablet</td>
+							<td> Apple</td>
+							<td> R$1000,00</td>
+								<td> <a href = "alterarProduto.html">alterar</a></td>
+							<td> <a onclick = "excluir_registro()">excluir</a></td>
+						</tr>
+						<tr> 
+							<td> 2</td>
+							<td> Smartphone</td>
+							<td>Winm</td>
+							<td> R$1000,00</td>
+								<td> <a href = "alterarProduto.html">alterar</a></td>
+							<td> <a onclick = "excluir_registro()">excluir</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<footer id = "rodape"></footer>
+	</body>
+</html>
